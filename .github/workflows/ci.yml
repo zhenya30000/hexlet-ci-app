@@ -5,7 +5,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       # Устанавливаем Node.js
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
       - run: make setup
       - run: make install
       - run: make build
