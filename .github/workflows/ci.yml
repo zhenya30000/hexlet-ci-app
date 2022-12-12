@@ -1,3 +1,4 @@
+on: push
 jobs:
   build: # имя взято для примера
     runs-on: ubuntu-latest
