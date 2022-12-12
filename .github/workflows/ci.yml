@@ -1,0 +1,12 @@
+jobs:
+  build: # имя взято для примера
+    runs-on: ubuntu-latest
+
+    steps:      
+      - uses: actions/checkout@v2
+      # Устанавливаем Node.js
+      - uses: actions/setup-node@v1
+       - run: make setup
+       - run: make install
+       - run: make test
+       - run: make lint
